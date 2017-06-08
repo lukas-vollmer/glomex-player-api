@@ -49,7 +49,6 @@
                 var countdownInterval = setInterval(function(){
                     if(play==1){
                         countdownDuration--;
-                        console.log(countdownDuration);
                         if(countdownDuration<=0){
                             if ( $.isFunction( settings.complete ) ) {
                                 settings.complete.call(this);

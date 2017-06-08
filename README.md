@@ -28,8 +28,11 @@ $('.glomexPlayer').glomexPlayer({
 ```
 **Please note that the player only works with domains, that are registered at glomex!**
 
-License
-----
+### Todo
+
+Optimize for mobile pages/apps
+
+### License
 
 MIT
 
