@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Glomex Player API</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<style type="text/css">
+/* JUST FOR DEMO */
+body{
+    margin: 0px;
+}
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+
+
+<div class="glomexPlayer"></div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="//component-vvs.glomex.com/glomex-embed/1/glomex-embed.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+    $('.glomexPlayer').glomexPlayer({
+        videoId: 'v-b6tzpugd4ogh',
+        duration: 35640,
+        load: function () {
+            console.log('VIDEO LOADED');
+        },
+        start: function () {
+            console.log('VIDEO START');
+        },
+        break: function(){
+            console.log('VIDEO BREAK');
+        },
+        complete: function () {
+            console.log('VIDEO COMPLETE');
+        }
+    });
+});
+
+</script>
+</body>
+</html>
